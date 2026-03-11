@@ -1,0 +1,15 @@
+# Program to check if a single character is a vowel or not
+
+# Ask the user to enter a character
+char = input("Enter a single character: ")
+
+# Convert the character to lowercase so both A and a work
+char = char.lower()
+
+# Check if the character is a vowel
+if char in ['a', 'e', 'i', 'o', 'u']:
+    print("The character is a vowel")   # This runs if the character is a vowel
+else:
+    print("The character is not a vowel")   # This runs if the character is not a vowel
+
+# End of program

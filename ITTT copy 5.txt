@@ -1,0 +1,13 @@
+# Program to check if a triangle is equilateral
+
+# Get lengths of three sides from the user
+a = float(input("Enter side a: "))  # Convert input to float for decimal numbers
+b = float(input("Enter side b: "))
+c = float(input("Enter side c: "))
+
+# Check if all three sides are equal
+# Equilateral triangle: all sides have same length
+if a == b == c:
+    print("The triangle is equilateral")
+else:
+    print("The triangle is not equilateral") 

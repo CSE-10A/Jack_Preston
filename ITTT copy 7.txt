@@ -1,0 +1,19 @@
+# Program to convert temperatures between Celsius and Fahrenheit
+
+# Prompt user to enter temperature value
+temp = float(input("Enter the temperature: "))
+
+# Prompt user to specify the unit (C or F)
+unit = input("Is this in Celsius or Fahrenheit? (C/F): ").upper()  # Convert to uppercase
+
+if unit == "C":
+    # Celsius to Fahrenheit conversion formula: F = (C * 9/5) + 32
+    fahrenheit = (temp * 9/5) + 32
+    print(f"{temp}°C is {fahrenheit}°F")
+elif unit == "F":
+    # Fahrenheit to Celsius conversion formula: C = (F - 32) * 5/9
+    celsius = (temp - 32) * 5/9
+    print(f"{temp}°F is {celsius}°C")
+else:
+    # Handle invalid unit input
+    print("Invalid unit, please enter C for Celsius or F for Fahrenheit") 

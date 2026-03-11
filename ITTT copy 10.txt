@@ -1,0 +1,16 @@
+# Program to guess a number between 1 and 9
+
+# Set a secret number (can be any number between 1 and 9)
+secret_number = 7
+
+# Loop until the user guesses correctly
+while True:
+    # Ask the user to guess a number
+    guess = int(input("Guess a number between 1 and 9: "))
+    
+    # Check if the guess is correct
+    if guess == secret_number:
+        print("Well guessed!")  # Correct guess
+        break  # Exit the loop
+    else:
+        print("Try again!")     # Incorrect guess, continue loop 

@@ -1,0 +1,24 @@
+# Program to print different messages based on an integer's value
+
+# Prompt user for an integer
+n = int(input("Enter an integer: "))
+
+# Check if the number is odd
+if n % 2 != 0:
+    print("Weird")  # Odd numbers are "Weird"
+
+# Check if the number is even and between 2 and 5
+elif n % 2 == 0 and 2 <= n <= 5:
+    print("Not Weird")  # Even numbers in 2-5 are "Not Weird"
+
+# Check if the number is even and between 6 and 10
+elif n % 2 == 0 and 6 <= n <= 10:
+    print("Weird")  # Even numbers in 6-10 are "Weird"
+
+# Check if the number is even and greater than 20
+elif n % 2 == 0 and n > 20:
+    print("Not Weird")  # Even numbers greater than 20 are "Not Weird"
+
+# Handle other cases (even numbers 11-20)
+else:
+    print("No condition matched") 

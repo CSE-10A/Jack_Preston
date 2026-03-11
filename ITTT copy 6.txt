@@ -1,0 +1,13 @@
+# Program to find the larger of two numbers
+
+# Prompt the user for two numbers
+num1 = float(input("Enter the first number: "))  # Convert to float
+num2 = float(input("Enter the second number: "))
+
+# Compare the two numbers
+if num1 > num2:
+    print("The larger number is:", num1)  # Print if first number is larger
+elif num2 > num1:
+    print("The larger number is:", num2)  # Print if second number is larger
+else:
+    print("Both numbers are equal")       # Print if numbers are equal
